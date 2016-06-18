@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Älplermagronen</title>
+    <meta name="description" content="Älplermagronen ist ein traditionelles Schweizer Gericht. Es ist schnell zubereitet und einfach köstlich!">
+    <meta name="keywords" content="Älplermagronen, Älplermageronen, Schweiz, Schweizer Essen, Schweizer Gericht, Schweizer Küche, Aelplermagronen, Aelplermageronen, Alplermagronen, Alplermageronen">
+    <link rel="stylesheet" href="screen.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <style>
+        .parallax {
+            perspective: 1px;
+            height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        .parallax__layer {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+        .parallax__layer--base {
+            position: relative;
+            transform: translateZ(0);
+        }
+        .parallax__layer--back {
+            transform: translateZ(-2px) scale(3);
+        }
+        .parallax__layer.parallax__layer--back img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="parallax">
+    <div class="parallax__layer parallax__layer--back">
+        <img itemprop="image" alt="Älplermagronen" src="assets/main.jpg">
+    </div>
+    <div class="parallax__layer parallax__layer--base">
+        <div class="content">
+            <h1>älplermagronen</h1>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
