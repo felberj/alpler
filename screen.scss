@@ -32,11 +32,6 @@
 	.description {
 		text-align: center;
 	}
-	h1 {
-		//text-align: center;
-		padding-left: 33.3%;
-		margin-left: 15px;
-	}
 	.ingredients {
 		text-align: right;
 		ul {
@@ -45,6 +40,31 @@
 	}
 	.instructions {
 		ul {
+		}
+	}
+}
+
+@media (min-width: 800px) {
+	.content {
+		h1 {
+			padding-left: 33.3%;
+			margin-left: 15px;
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	.parallax__layer--back {
+		img {
+			width: auto;
+			height: 40%;
+		}
+	}
+	.content {
+		margin-top: 60%;
+		height: 100vh;
+		h1 {
+			text-align: center;
 		}
 	}
 }
