@@ -1,92 +1,93 @@
 <html>
-  <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <script src="/tracking.js"></script>
 
-  <style type="text/css">
-@font-face {
-  font-family: 'Kanit-Bold';
-    src:  url('Kanit-Bold.ttf.woff') format('woff'),
-    url('Kanit-Bold.ttf.svg#Kanit-Bold') format('svg'),
-    url('Kanit-Bold.ttf.eot'),
-    url('Kanit-Bold.eot?#iefix') format('embedded-opentype'); 
-    font-weight: normal;
-    font-style: normal;
-}
+        <style type="text/css">
+         @font-face {
+             font-family: 'Kanit-Bold';
+             src:  url('Kanit-Bold.ttf.woff') format('woff'),
+             url('Kanit-Bold.ttf.svg#Kanit-Bold') format('svg'),
+             url('Kanit-Bold.ttf.eot'),
+             url('Kanit-Bold.eot?#iefix') format('embedded-opentype'); 
+             font-weight: normal;
+             font-style: normal;
+         }
 
-@font-face {
-  font-family: 'DINBold';
-    src:  url('DINBold.ttf.woff') format('woff'),
-    url('DINBold.ttf.svg#DINBold') format('svg'),
-    url('DINBold.ttf.eot'),
-    url('DINBold.eot?#iefix') format('embedded-opentype'); 
-    font-weight: normal;
-    font-style: normal;
-}
-.circle:before {
-  content: ' \25CF';
-  font-size: 200px;
-}
+         @font-face {
+             font-family: 'DINBold';
+             src:  url('DINBold.ttf.woff') format('woff'),
+             url('DINBold.ttf.svg#DINBold') format('svg'),
+             url('DINBold.ttf.eot'),
+             url('DINBold.eot?#iefix') format('embedded-opentype'); 
+             font-weight: normal;
+             font-style: normal;
+         }
+         .circle:before {
+             content: ' \25CF';
+             font-size: 200px;
+         }
 
-.examplefont {
-  font-family: 'DINBold';  
-  color: black;
-}
+         .examplefont {
+             font-family: 'DINBold';  
+             color: black;
+         }
 
-.upper {
-  text-transform: uppercase;
-}
-.respect {
-font-size: 70;
-width: 500px;
-height: 700px;
-background: black;
-color: white;
-padding: 1em;
-position: relative;
-line-height: 0.9em;
-}
-.full-stop {
-color: yellow;
-}
-.dot-font {
-font-family:'Arialä';
-font-size: 150%;
-}
-.disrespectful {
-color: grey;
-}
-.down {
-position: absolute;
-font-size: 30;
-bottom: 1em;
-line-height: 0.9em;
-}
-  </style>
-  <script>
-    function update() {
-    const val1 = document.getElementById('upperin').value;
-    const val2 = document.getElementById('lowerin').value;
-    document.getElementById('up').textContent = val1;
-    document.getElementById('down').textContent = val2;
-    }
-    </script>
-  </head>
-  <div>
-    <input name="up" id="upperin">
-    <input name="down" id="lowerin">
-    <button onClick="update()">update</button>
-  </div>
-  <div class="respect upper examplefont">
-  <div>
-<span id="up">ICH KOCHE HEUTE älpler- magronen</span><span class="full-stop dot-font">.</span>
-  </div>
-  <div class="disrespectful"><span id="down">
-mit kartoffeln</span><span class="dot-font">.</span>
-  </div>
-<div class="down full-stop">
-    <div>mach einen punkt<span class="dot-font">.</span></div>
-    <div>aus respekt<span class="dot-font">.</span></div>
-  </div>
+         .upper {
+             text-transform: uppercase;
+         }
+         .respect {
+             font-size: 70;
+             width: 500px;
+             height: 700px;
+             background: black;
+             color: white;
+             padding: 1em;
+             position: relative;
+             line-height: 0.9em;
+         }
+         .full-stop {
+             color: yellow;
+         }
+         .dot-font {
+             font-family:'Arialä';
+             font-size: 150%;
+         }
+         .disrespectful {
+             color: grey;
+         }
+         .down {
+             position: absolute;
+             font-size: 30;
+             bottom: 1em;
+             line-height: 0.9em;
+         }
+        </style>
+        <script>
+         function update() {
+             const val1 = document.getElementById('upperin').value;
+             const val2 = document.getElementById('lowerin').value;
+             document.getElementById('up').textContent = val1;
+             document.getElementById('down').textContent = val2;
+         }
+        </script>
+    </head>
+    <div>
+        <input name="up" id="upperin">
+        <input name="down" id="lowerin">
+        <button onClick="update()">update</button>
+    </div>
+    <div class="respect upper examplefont">
+        <div>
+            <span id="up">ICH KOCHE HEUTE älpler- magronen</span><span class="full-stop dot-font">.</span>
+        </div>
+        <div class="disrespectful"><span id="down">
+            mit kartoffeln</span><span class="dot-font">.</span>
+        </div>
+        <div class="down full-stop">
+            <div>mach einen punkt<span class="dot-font">.</span></div>
+            <div>aus respekt<span class="dot-font">.</span></div>
+        </div>
   </div>
     <body>
   </body>
